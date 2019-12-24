@@ -1,0 +1,41 @@
+{
+  "type": "modal",
+  "title": {
+    "type": "plain_text",
+    "text": "{{questionTitle}}",
+    "emoji": true
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Post your answer"
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Cancel"
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "{{questionText}}"
+      }
+    },
+    {
+      "type": "input",
+      "element": {
+        "type": "plain_text_input",
+        "multiline": true,
+        "placeholder": {
+          "type": "plain_text",
+          "text": " "
+        }
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "Your answer",
+        "emoji": true
+      }
+    }
+  ]
+}

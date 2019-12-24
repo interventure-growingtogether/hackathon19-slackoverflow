@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "plain_text",
+        "text": "Hi, {{user}} :wave:\nGreat to meet you here in {{workspace}}! Now, let's get you settled:",
+        "emoji": true
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "1. Start by picking topics :point_right:"
+      },
+      "accessory": {
+        "type": "multi_static_select",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select topics",
+          "emoji": true
+        },
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Java",
+              "emoji": true
+            },
+            "value": "java"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Spring",
+              "emoji": true
+            },
+            "value": "spring"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "React",
+              "emoji": true
+            },
+            "value": "react"
+          }
+        ]
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "2. Ask a question with `/so`"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "And that's it :tada:\nAll your questions will be listed here, along with responses. You can always Say `/so help` to learn more."
+      }
+    }
+  ]
+}

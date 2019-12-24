@@ -1,0 +1,95 @@
+{
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*{{questionTitle}}*"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "{{questionBody}}"
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "{{answer}}"
+      }
+    },
+    {
+      "type": "context",
+      "elements": [
+        {
+          "type": "plain_text",
+          "emoji": true,
+          "text": "{{upvotes}}"
+        },
+        {
+          "type": "plain_text",
+          "emoji": true,
+          "text": ":thumbsup:"
+        },
+        {
+          "type": "plain_text",
+          "emoji": true,
+          "text": "{{downvotes}}"
+        },
+        {
+          "type": "plain_text",
+          "emoji": true,
+          "text": ":thumbsdown:"
+        }
+      ]
+    },
+    {
+      "type": "actions",
+      "elements": [
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "emoji": true,
+            "text": ":thumbsup:"
+          },
+          "style": "primary",
+          "value": "voteUp"
+        },
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "emoji": true,
+            "text": ":thumbsdown:"
+          },
+          "style": "danger",
+          "value": "voteDown"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "actions",
+      "elements": [
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "emoji": true,
+            "text": "Answer"
+          },
+          "value": "click_me_123"
+        }
+      ]
+    }
+  ]
+}
