@@ -16,6 +16,7 @@
       },
       "accessory": {
         "type": "multi_static_select",
+        "action_id": "userTopicsSelected",
         "placeholder": {
           "type": "plain_text",
           "text": "Select topics",
