@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Profile;
 import org.springframework.http.MediaType;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -75,7 +76,7 @@ public class SlackSlashCommand {
         // set attachments
         Attachment[] attachments = new Attachment[1];
         attachments[0] = new Attachment();
-        attachments[0].setText("I will perform all tasks for you.");
+        attachments[0].setText((StringUtils.isEmpty(command) ? "unknown-command" : command) + ": I will perform all tasks for you.");
         richMessage.setAttachments(attachments);
         
         // For debugging purpose only
